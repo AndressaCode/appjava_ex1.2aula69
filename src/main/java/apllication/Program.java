@@ -20,22 +20,18 @@ public class Program {
     
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        Calculator calc = new Calculator();
     
         System.out.print("Informe um valor qualquer: ");
         double radius = sc.nextDouble();
         
-        double c = calc.circunference(radius);
-        double v = calc.volume(radius);
+        double c = Calculator.circunference(radius);
+        double v = Calculator.volume(radius);
         
         System.out.printf("Circunferencia: %.2f%n", c);
         System.out.printf("Volume: %.2f %n", v);
-        System.out.printf("Valor de PI: %.2f", calc.PI);
+        System.out.printf("Valor de PI: %.2f", Calculator.PI);
         // circunferencia = 2 * pi * r;
         // volume = 4 * pi * raio * raio * raio;
-        
-        
-        
     
     }
     
